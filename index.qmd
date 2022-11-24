@@ -6,9 +6,37 @@ title: "SAVVY: Survival analysis for AdVerse events with VarYing follow-up times
 
 The SAVVY project is a consortium of academic and pharmaceutical industry partners that aims to improve the analyses of adverse event (AE) data in clinical trials through the use of survival techniques appropriately dealing with varying follow-up times and competing events. Although statistical methodologies have advanced, in AE analyses often the incidence proportion, the incidence density or a non-parametric Kaplan-Meier estimator are used, which either ignore censoring or competing events. In an empirical study including randomized clinical trials from several sponsor companies, these potential sources of bias are investigated.
 
+# Steering committee
+
+```{r setup, include = FALSE, echo = FALSE}
+## load packages
+packs.html <- c("knitr", "pander", "reporttools", "dplyr", "readxl")
+for (i in 1:length(packs.html)){library(packs.html[i], character.only = TRUE)}
+
+knitr::opts_chunk$set(echo = TRUE)
+
+## roster   
+path <- getwd()
+roster <- as.data.frame(read_excel(paste(path, "/data/roster.xlsx", sep = ""), col_types = NULL))
+```
+
+```{r, include=TRUE, echo=FALSE}
+kable(roster)
+```
+
+# Impact
+
+Besides [publications](publications.html) SAVVY has already made it into a standard text book on drug development, see p. 486/7 in [Statistical Issues in Drug Development (2nd ed)](http://www.senns.uk/SIDD.html) by [Stephen Senn](https://www.senns.uk/):
+
+<center>![](senn.jpg)</center>
+
+<br>
+
+The general interest around quantification of risk in clinical trials is also exemplified by the reactions to this [linkedin post](https://www.linkedin.com/posts/kasparrufibach_biostatistics-timetoevent-safety-activity-6997583241654206464-Bh1y?utm_source=share&utm_medium=member_desktop): Within a week, the post generated >30'000 views and just short of 300 likes.
+
 # Contact
 
-Reach out to [Kaspar Rufibach](mailto:kaspar.rufibach@roche.com) with comments and suggestions.
+Reach out to [Kaspar Rufibach](mailto:kaspar.rufibach@roche.com) with comments and suggestions on this webpage.
 
 # Updates of this page
 

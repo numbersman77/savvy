@@ -1,5 +1,5 @@
 ---
-title: "Publications"
+title: "Publications and further publicity"
 output: 
   rmarkdown::html_document:
     highlight: pygments
@@ -11,13 +11,21 @@ output:
 bibliography: stat.bib
 ---
 
+# Publications
+
 So far, four scientific publications came out of the SAVVY project.
 
-
-- @stegherr_20_sap: Statistical analysis plan of the project, outlining all estimators and meta-analyses. [arxiv](https://arxiv.org/abs/1912.00263) | [publication](https://doi.org/10.1002/bimj.201900347)
+- @stegherr_20_sap: Statistical analysis plan, presenting the rationale and statistical concept of the empirical study conducted as part of the SAVVY project. The statistical methods are presented in unified notation and examples of their implementation in R and SAS are provided. [arxiv](https://arxiv.org/abs/1912.00263) | [publication](https://doi.org/10.1002/bimj.201900347)
 - @stegherr2020estimating: Comparison of estimators via simulations. [arxiv](https://arxiv.org/abs/2001.05709) | [publication](https://doi.org/10.1002/pst.2130)
-- @stegherr_20_1sample: Estimation of AE risk in one group. [arxiv]() | [publication]()
-- @rufibach_20_2sample: Estimating and comparing adverse event probabilities in the presence of varying follow-up times and competing events. [arxiv](https://arxiv.org/abs/2008.07881) | [publication](https://doi.org/10.1080/19466315.2022.2144944)
+- @stegherr_20_1sample: 1-sample case, compares estimators of AE risk in one treatment arm. [arxiv](https://arxiv.org/abs/2008.07883) | [publication](https://doi.org/10.1186/s13063-021-05354-x)
+- @rufibach_20_2sample: 2-sample case, compares relative risk estimators comparing two treatment arms based on (1) AE probabilities and (2) hazards. [arxiv](https://arxiv.org/abs/2008.07881) | [publication](https://doi.org/10.1080/19466315.2022.2144944)
+
+# Podcasts
+
+Jan Beyersmann and Kaspar Rufibach have also been interviewed for two [effective statistician podcasts](https://theeffectivestatistician.com) discussing SAVVY:
+
+- 7th July 2021: [The analysis of adverse events done right – SAVVY](https://theeffectivestatistician.com/the-analysis-of-adverse-events-done-right-savvy/).
+- 29th November 2021: [Effective statistician podcast (invited contribution to 200th episode)](https://theeffectivestatistician.com/200th-episode/). Invited contribution to the 200th episode of this podcast, featuring the contributors of the 10% most downloaded podcasts. Our contribution starts at 02:20:00.
 
 
 
