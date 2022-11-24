@@ -26,7 +26,7 @@ kable(roster)
 
 # Impact
 
-Besides [publications](publications.html) SAVVY has already made it into a standard text book on drug development, see p. 486/7 in [Statistical Issues in Drug Development (2nd ed)](http://www.senns.uk/SIDD.html) by [Stephen Senn](https://www.senns.uk/):
+Besides [publications](publications.html) SAVVY has already made it into a standard text book on drug development, see p. 486/7 in [Statistical Issues in Drug Development (3rd ed)](http://www.senns.uk/SIDD.html) by [Stephen Senn](https://www.senns.uk/):
 
 <center>![](senn.jpg)</center>
 
