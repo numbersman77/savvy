@@ -1,11 +1,24 @@
 ---
 title: "Publications"
+output: 
+  rmarkdown::html_document:
+    highlight: pygments
+    number_sections: yes
+    self_contained: yes
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
+bibliography: stat.bib
 ---
 
-# The SAVVY project
+So far, four scientific publications came out of the SAVVY project.
 
-The SAVVY project is a consortium of academic and pharmaceutical industry partners that aims to improve the analyses of adverse event (AE) data in clinical trials through the use of survival techniques appropriately dealing with varying follow-up times and competing events. Although statistical methodologies have advanced, in AE analyses often the incidence proportion, the incidence density or a non-parametric Kaplan-Meier estimator are used, which either ignore censoring or competing events. In an empirical study including randomized clinical trials from several sponsor companies, these potential sources of bias are investigated.
 
-# Contact
+- @stegherr_20_sap: Statistical analysis plan of the project, outlining all estimators and meta-analyses. [arxiv](https://arxiv.org/abs/1912.00263) | [publication](https://doi.org/10.1002/bimj.201900347)
+- @stegherr2020estimating: Comparison of estimators via simulations. [arxiv](https://arxiv.org/abs/2001.05709) | [publication](https://doi.org/10.1002/pst.2130)
+- @stegherr_20_1sample: Estimation of AE risk in one group. [arxiv]() | [publication]()
+- @rufibach_20_2sample: Estimating and comparing adverse event probabilities in the presence of varying follow-up times and competing events. [arxiv](https://arxiv.org/abs/2008.07881) | [publication](https://doi.org/10.1080/19466315.2022.2144944)
 
-Reach out to [Kaspar Rufibach](mailto:kaspar.rufibach@roche.com) with comments and suggestions.
+
+
+# References

@@ -9,3 +9,7 @@ The SAVVY project is a consortium of academic and pharmaceutical industry partne
 # Contact
 
 Reach out to [Kaspar Rufibach](mailto:kaspar.rufibach@roche.com) with comments and suggestions.
+
+# Updates of this page
+
+- 24/11/2022: initial version online

@@ -10,7 +10,7 @@ output:
     toc: yes
     toc_depth: 3
     toc_float: yes
-bibliography: biblio.bib
+bibliography: stat.bib
 ---
 
 # Background

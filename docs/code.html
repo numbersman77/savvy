@@ -237,8 +237,8 @@ div.csl-indent {
 <h1>Background</h1>
 <p>The assessment of safety is an important aspect of the evaluation of new therapies in clinical trials, with analyses of adverse events being an essential part of this. Standard methods for the analysis of adverse events such as the incidence proportion, i.e.&nbsp;the number of patients with a specific adverse event out of all patients in the treatment groups, do not account for both varying follow-up times and competing risks. Alternative approaches such as the Aalen-Johansen estimator of the cumulative incidence function have been suggested. Theoretical arguments and numerical evaluations support the application of these more advanced methodology, but as yet there is to our knowledge only insufficient empirical evidence whether these methods would lead to different conclusions in safety evaluations. The Survival analysis for AdVerse events with VarYing follow-up times (SAVVY) project strives to close this gap in evidence by conducting a meta-analytical study to assess the impact of the methodology on the conclusion of the safety assessment empirically. Three papers are currently under review summarizing the rationale and results of the project:</p>
 <ul>
-<li><span class="citation" data-cites="stegherr_20_sap">Stegherr, Beyersmann, et al. (<a href="#ref-stegherr_20_sap" role="doc-biblioref">2021</a>)</span>: statistical analysis plan, presenting the rationale and statistical concept of the empirical study conducted as part of the SAVVY project. The statistical methods are presented in unified notation and examples of their implementation in R and SAS are provided.</li>
-<li><span class="citation" data-cites="stegherr_20_1sample">Stegherr, Schmoor, Beyersmann, et al. (<a href="#ref-stegherr_20_1sample" role="doc-biblioref">2021</a>)</span>: 1-sample case, compares estimators of AE probabilities in one treatment arm,</li>
+<li><span class="citation" data-cites="stegherr_20_sap">Regina Stegherr et al. (<a href="#ref-stegherr_20_sap" role="doc-biblioref">2021</a>)</span>: statistical analysis plan, presenting the rationale and statistical concept of the empirical study conducted as part of the SAVVY project. The statistical methods are presented in unified notation and examples of their implementation in R and SAS are provided.</li>
+<li><span class="citation" data-cites="stegherr_20_1sample">R. Stegherr et al. (<a href="#ref-stegherr_20_1sample" role="doc-biblioref">2021</a>)</span>: 1-sample case, compares estimators of AE probabilities in one treatment arm,</li>
 <li><span class="citation" data-cites="rufibach_20_2sample">Rufibach et al. (<a href="#ref-rufibach_20_2sample" role="doc-biblioref">2022</a>)</span>: 2-sample case, compares relative risk estimators comparing two treatment arms based on (1) AE probabilities and (2) hazards.</li>
 </ul>
 </section>
@@ -262,7 +262,7 @@ div.csl-indent {
 <h2 class="anchored" data-anchor-id="functions">Functions</h2>
 <p>Below all functions are defined.</p>
 <ul>
-<li><code>data_generation_constant_cens</code>: This function generates the dataset denoted by <span class="math inline">\(S1\)</span> in Table~4 of <span class="citation" data-cites="stegherr_20estimating">Stegherr, Schmoor, Lübbert, et al. (<a href="#ref-stegherr_20estimating" role="doc-biblioref">2021</a>)</span>, i.e.&nbsp;we assume constant hazards for the AE hazard, the hazard for the competing event of death, and the hazard for the “soft” competing events. Censoring is uniform.</li>
+<li><code>data_generation_constant_cens</code>: This function generates the dataset denoted by <span class="math inline">\(S1\)</span> in Table~4 of <span class="citation" data-cites="stegherr_20estimating">(<a href="#ref-stegherr_20estimating" role="doc-biblioref"><strong>stegherr_20estimating?</strong></a>)</span>, i.e.&nbsp;we assume constant hazards for the AE hazard, the hazard for the competing event of death, and the hazard for the “soft” competing events. Censoring is uniform.</li>
 <li><code>incidenceProportion</code>: Compute incidence proportion.</li>
 <li><code>probTransIncidenceDensity</code>: Compute probability transform incidence density ignoring competing events.</li>
 <li><code>probTransIncidenceDensity</code>: Compute probability transform incidence density ignoring competing events.</li>
@@ -446,7 +446,7 @@ div.csl-indent {
 </section>
 <section id="estimation-of-ae-probabilities" class="level1">
 <h1>Estimation of AE probabilities</h1>
-<p>We generate the dataset <span class="math inline">\(S1\)</span> in <span class="citation" data-cites="stegherr_20_sap">Stegherr, Beyersmann, et al. (<a href="#ref-stegherr_20_sap" role="doc-biblioref">2021</a>)</span> using the parameter values for Arm A:</p>
+<p>We generate the dataset <span class="math inline">\(S1\)</span> in <span class="citation" data-cites="stegherr_20_sap">Regina Stegherr et al. (<a href="#ref-stegherr_20_sap" role="doc-biblioref">2021</a>)</span> using the parameter values for Arm A:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># sample size</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>N <span class="ot">&lt;-</span> <span class="dv">200</span></span>
@@ -672,16 +672,13 @@ div.csl-indent {
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
 <div id="ref-rufibach_20_2sample" class="csl-entry" role="doc-biblioentry">
-Rufibach, Kaspar, Regina Stegherr, Claudia Schmoor, Valentine Jehl, Arthur Allignol, Annette Boeckenhoff, Cornelia Dunger-Baldauf, et al. 2022. <span>“<span class="nocase">Survival analysis for AdVerse events with VarYing follow-up times (SAVVY) – comparison of adverse event risks in randomized controlled trials</span>.”</span> <em>Statistics in Biopharmaceutical Research, Accepted</em>. <a href="https://arxiv.org/abs/2008.07881">https://arxiv.org/abs/2008.07881</a>.
+Rufibach, Kaspar, Regina Stegherr, Claudia Schmoor, Valentine Jehl, Arthur Allignol, Annette Boeckenhoff, Cornelia Dunger-Baldauf, et al. 2022. <span>“<span class="nocase">Survival analysis for AdVerse events with VarYing follow-up times (SAVVY) – comparison of adverse event risks in randomized controlled trials</span>.”</span> <em>Statistics in Biopharmaceutical Research, Accepted</em>.
 </div>
 <div id="ref-stegherr_20_sap" class="csl-entry" role="doc-biblioentry">
-Stegherr, Regina, Jan Beyersmann, Valentine Jehl, Kaspar Rufibach, Friedhelm Leverkus, Claudia Schmoor, and Tim Friede. 2021. <span>“Survival Analysis for AdVerse Events with VarYing Follow-up Times (SAVVY): Rationale and Statistical Concept of a Meta-Analytic Study.”</span> <em>Biometrical Journal.</em> 63. <a href="https://doi.org/10.1002/bimj.201900347">https://doi.org/10.1002/bimj.201900347</a>.
+Stegherr, Regina, Jan Beyersmann, Valentine Jehl, Kaspar Rufibach, Friedhelm Leverkus, Claudia Schmoor, and Tim Friede. 2021. <span>“Survival Analysis for AdVerse Events with VarYing Follow-up Times (SAVVY): Rationale and Statistical Concept of a Meta-Analytic Study.”</span> <em>Biometrical Journal</em> 63 (March): 650–70.
 </div>
 <div id="ref-stegherr_20_1sample" class="csl-entry" role="doc-biblioentry">
-Stegherr, Regina, Claudia Schmoor, Jan Beyersmann, Kaspar Rufibach, Valentine Jehl, Andreas Brückner, Lewin Eisele, et al. 2021. <span>“<span class="nocase">Survival analysis for AdVerse events with VarYing follow-up times (SAVVY) – estimation of adverse event risks</span>.”</span> <em>Trials</em> 22: 240. <a href="https://doi.org/10.1186/s13063-021-05354-x">https://doi.org/10.1186/s13063-021-05354-x</a>.
-</div>
-<div id="ref-stegherr_20estimating" class="csl-entry" role="doc-biblioentry">
-Stegherr, Regina, Claudia Schmoor, Michael Lübbert, Tim Friede, and Jan Beyersmann. 2021. <span>“Estimating and Comparing Adverse Event Probabilities in the Presence of Varying Follow-up Times and Competing Events.”</span> <em>Pharmaceutical Statistics</em> 20 (6): 1125–46. https://doi.org/<a href="https://doi.org/10.1002/pst.2130">https://doi.org/10.1002/pst.2130</a>.
+Stegherr, R., C. Schmoor, J. Beyersmann, K. Rufibach, V. Jehl, A. Brückner, L. Eisele, et al. 2021. <span>“<span class="nocase"><span>S</span>urvival analysis for <span>A</span>d<span>V</span>erse events with <span>V</span>ar<span>Y</span>ing follow-up times (<span>S</span><span>A</span><span>V</span><span>V</span><span>Y</span>)-estimation of adverse event risks</span>.”</span> <em>Trials</em> 22 (1): 420.
 </div>
 </div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

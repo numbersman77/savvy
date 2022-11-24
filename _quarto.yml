@@ -1,7 +1,12 @@
 project:
   type: website
   output-dir: docs
-
+  render:
+    - index.qmd
+    - publications.qmd
+    - events.qmd
+    - code.qmd
+    
 website:
   title: "SAVVY"
   navbar:
