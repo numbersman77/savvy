@@ -9,7 +9,7 @@ project:
     
 website:
   title: ""
-  search: false
+  search: true
   navbar:
     left:
       - href: index.qmd
