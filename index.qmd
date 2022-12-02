@@ -21,7 +21,7 @@ roster <- as.data.frame(read_excel(paste(path, "/data/roster.xlsx", sep = ""), c
 ```
 
 ```{r, include=TRUE, echo=FALSE}
-kable(roster)
+kable(select(filter(roster, Steering == 1), -Steering))
 ```
 
 # Impact
@@ -32,7 +32,7 @@ Besides [publications](publications.html) SAVVY has already made it into a stand
 
 <br>
 
-The general interest around quantification of risk in clinical trials is also exemplified by the reactions to this [linkedin post](https://www.linkedin.com/posts/kasparrufibach_biostatistics-timetoevent-safety-activity-6997583241654206464-Bh1y?utm_source=share&utm_medium=member_desktop): Within a week, the post generated >30'000 views and just short of 300 likes.
+The general interest around quantification of risk in clinical trials is also exemplified by the reactions to this [linkedin post](https://www.linkedin.com/posts/kasparrufibach_biostatistics-timetoevent-safety-activity-6997583241654206464-Bh1y?utm_source=share&utm_medium=member_desktop): Within a week, the post generated \>30'000 views and just short of 300 likes.
 
 # Contact
 
@@ -40,4 +40,4 @@ Reach out to [Kaspar Rufibach](mailto:kaspar.rufibach@roche.com) with comments a
 
 # Updates of this page
 
-- 24/11/2022: initial version online
+-   24/11/2022: initial version online
