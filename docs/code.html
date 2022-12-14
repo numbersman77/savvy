@@ -187,6 +187,7 @@ div.csl-indent {
   <ul>
   <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background">Background</a></li>
   <li><a href="#purpose-of-this-document" id="toc-purpose-of-this-document" class="nav-link" data-scroll-target="#purpose-of-this-document">Purpose of this document</a></li>
+  <li><a href="#sas-code" id="toc-sas-code" class="nav-link" data-scroll-target="#sas-code">SAS code</a></li>
   <li><a href="#setup" id="toc-setup" class="nav-link" data-scroll-target="#setup">Setup</a>
   <ul class="collapse">
   <li><a href="#packages" id="toc-packages" class="nav-link" data-scroll-target="#packages">Packages</a></li>
@@ -226,14 +227,18 @@ div.csl-indent {
 <h1>Background</h1>
 <p>The assessment of safety is an important aspect of the evaluation of new therapies in clinical trials, with analyses of adverse events being an essential part of this. Standard methods for the analysis of adverse events such as the incidence proportion, i.e.&nbsp;the number of patients with a specific adverse event out of all patients in the treatment groups, do not account for both varying follow-up times and competing risks. Alternative approaches such as the Aalen-Johansen estimator of the cumulative incidence function have been suggested. Theoretical arguments and numerical evaluations support the application of these more advanced methodology, but as yet there is to our knowledge only insufficient empirical evidence whether these methods would lead to different conclusions in safety evaluations. The Survival analysis for AdVerse events with VarYing follow-up times (SAVVY) project strives to close this gap in evidence by conducting a meta-analytical study to assess the impact of the methodology on the conclusion of the safety assessment empirically. Three papers are currently under review summarizing the rationale and results of the project:</p>
 <ul>
-<li><span class="citation" data-cites="stegherr_20_sap">Regina Stegherr et al. (<a href="#ref-stegherr_20_sap" role="doc-biblioref">2021</a>)</span>: statistical analysis plan, presenting the rationale and statistical concept of the empirical study conducted as part of the SAVVY project. The statistical methods are presented in unified notation and examples of their implementation in R and SAS are provided.</li>
-<li><span class="citation" data-cites="stegherr_20_1sample">R. Stegherr, Schmoor, Beyersmann, et al. (<a href="#ref-stegherr_20_1sample" role="doc-biblioref">2021</a>)</span>: 1-sample case, compares estimators of AE probabilities in one treatment arm,</li>
-<li><span class="citation" data-cites="rufibach_20_2sample">Rufibach et al. (<a href="#ref-rufibach_20_2sample" role="doc-biblioref">2022</a>)</span>: 2-sample case, compares relative risk estimators comparing two treatment arms based on (1) AE probabilities and (2) hazards.</li>
+<li><span class="citation" data-cites="stegherr_20_sap">Regina Stegherr et al. (<a href="#ref-stegherr_20_sap" role="doc-biblioref">2021</a>)</span>: Statistical analysis plan, presenting the rationale and statistical concept of the empirical study conducted as part of the SAVVY project. The statistical methods are presented in unified notation and examples of their implementation in R and SAS are provided. <a href="https://arxiv.org/abs/1912.00263">arxiv</a> | <a href="https://doi.org/10.1002/bimj.201900347">publication</a></li>
+<li><span class="citation" data-cites="stegherr_20_1sample">R. Stegherr, Schmoor, Beyersmann, et al. (<a href="#ref-stegherr_20_1sample" role="doc-biblioref">2021</a>)</span>: 1-sample case, compares estimators of AE risk in one treatment arm. <a href="https://arxiv.org/abs/2008.07883">arxiv</a> | <a href="https://doi.org/10.1186/s13063-021-05354-x">publication</a></li>
+<li><span class="citation" data-cites="rufibach_20_2sample">Rufibach et al. (<a href="#ref-rufibach_20_2sample" role="doc-biblioref">2022</a>)</span>: 2-sample case, compares relative risk estimators comparing two treatment arms based on (1) AE probabilities and (2) hazards. <a href="https://arxiv.org/abs/2008.07881">arxiv</a> | <a href="https://doi.org/10.1080/19466315.2022.2144944">publication</a></li>
 </ul>
 </section>
 <section id="purpose-of-this-document" class="level1">
 <h1>Purpose of this document</h1>
 <p>This R markdown file provides easy accessible code to compute all the estimators for AE probabilities that are compared to each other in these papers. The github repository where this document is hosted is available <a href="https://github.com/numbersman77/savvy">here</a>.</p>
+</section>
+<section id="sas-code" class="level1">
+<h1>SAS code</h1>
+<p>The original SAS macros that were used by each sponsor to generate the summary data for the meta-analysis is available as supplement to <span class="citation" data-cites="stegherr_20_sap">Regina Stegherr et al. (<a href="#ref-stegherr_20_sap" role="doc-biblioref">2021</a>)</span>, see <a href="https://doi.org/10.1002/bimj.201900347">here</a>, or <a href="https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1002%2Fbimj.201900347&amp;file=bimj2199-sup-0001-SuppMat.zip">direct download link</a> for zip-file.</p>
 </section>
 <section id="setup" class="level1 tabset tabset-fade tabset-pills">
 <h1 class="tabset tabset-fade tabset-pills">Setup</h1>
