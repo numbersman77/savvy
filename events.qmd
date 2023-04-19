@@ -30,7 +30,6 @@ talks$date <- with(talks, paste(ifelse(start_d < 10, paste("", start_d, sep = ""
 
 # Upcoming events with SAVVY involvement
 
-- 12th April 2023: Seminar of [Basel Biometric Section](https://baselbiometrics.github.io/home/docs/): [Quantification of risk: ask the right questions or time to apply the estimand framework to safety!](https://baselbiometrics.github.io/home/docs/events_upcoming.html).
 - August 2023: [ISCB 2023 Milan](https://www.iscb2023.info/): invited session "Quantification of safety signals in clinical trials: Estimand, estimation, and how would good look like in ten years?"
 
 # Past events

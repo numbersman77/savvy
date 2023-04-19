@@ -1,11 +1,11 @@
-## ----r, include=FALSE, echo=FALSE---------------------------------------------
+
 # --------------------------------------------------------------
 # generate R file with code from this file
 # --------------------------------------------------------------
 knitr::purl(input = "code.qmd", output = "SAVVY_AEprobs.r")
 
 
-## ----r, include=TRUE, echo=TRUE-----------------------------------------------
+
 # --------------------------------------------------------------
 # packages
 # --------------------------------------------------------------
@@ -13,7 +13,7 @@ packs <- c("data.table", "etm", "survival", "mvna", "knitr")
 for (i in 1:length(packs)){library(packs[i], character.only = TRUE)}
 
 
-## ----r, include=TRUE, echo=TRUE-----------------------------------------------
+
 # --------------------------------------------------------------
 # functions
 # --------------------------------------------------------------
@@ -186,7 +186,7 @@ AJE <- function(data, CE, tau){
 }
 
 
-## ----r, include=TRUE, echo=TRUE-----------------------------------------------
+
 
 # sample size
 N <- 200
@@ -207,11 +207,11 @@ dat1 <- data_generation_constant_cens(N, min.cens, max.cens, haz.AE, haz.death, 
 tau <- max(dat1[, "time_to_event"])
 
 
-## ----r, include=TRUE, echo=TRUE-----------------------------------------------
+
 kable(head(dat1, 10), align = c("crcr"))
 
 
-## ----r, include=TRUE, echo=TRUE-----------------------------------------------
+
 
 # compute each estimator
 IP <- incidenceProportion(dat1, tau)
@@ -238,7 +238,7 @@ rownames(tab) <- c("incidence proportion", "probability transform incidence dens
 kable(tab, digits = c(3, 5))
 
 
-## ----r, include=TRUE, echo=TRUE-----------------------------------------------
+
 # display
 tab <- rbind(AJ2[2, ], AJ3[2, ])
 colnames(tab) <- c("estimated probability", "variance of estimation")
