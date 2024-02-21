@@ -30,7 +30,7 @@ talks$date <- with(talks, paste(ifelse(start_d < 10, paste("", start_d, sep = ""
 
 # Upcoming events with SAVVY involvement
 
-- August 2023: [ISCB 2023 Milan](https://www.iscb2023.info/): invited session "Quantification of safety signals in clinical trials: Estimand, estimation, and how would good look like in ten years?"
+- June 2024: [DIA San Diego](https://www.diaglobal.org/Flagship/DIA-2024).
 
 # Past events
 

@@ -40,4 +40,5 @@ Reach out to [Kaspar Rufibach](mailto:kaspar.rufibach@roche.com) with comments a
 
 # Updates of this page
 
--   24/11/2022: initial version online
+- 21/02/2024: [savvyr R package](http://cran.r-project.org/package=savvyr) uploaded to CRAN.
+- 24/11/2022: initial version online
