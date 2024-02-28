@@ -40,5 +40,6 @@ Reach out to [Kaspar Rufibach](mailto:kaspar.rufibach@roche.com) with comments a
 
 # Updates of this page
 
+- 28/02/2024: Added link to [preprint](https://arxiv.org/abs/2402.17692) of SAVVY overview paper to [publications](publications.html).
 - 21/02/2024: [savvyr R package](http://cran.r-project.org/package=savvyr) uploaded to CRAN.
 - 24/11/2022: initial version online
