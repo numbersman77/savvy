@@ -19,7 +19,7 @@ So far, five scientific publications came out of the SAVVY project.
 -   @stegherr2020estimating: Comparison of estimators via simulations. [arxiv](https://arxiv.org/abs/2001.05709) \| [publication](https://doi.org/10.1002/pst.2130)
 -   @stegherr_20_1sample: 1-sample case, compares estimators of AE risk in one treatment arm. [arxiv](https://arxiv.org/abs/2008.07883) \| [publication](https://doi.org/10.1186/s13063-021-05354-x)
 -   @rufibach_20_2sample: 2-sample case, compares relative risk estimators comparing two treatment arms based on (1) AE probabilities and (2) hazards. [arxiv](https://arxiv.org/abs/2008.07881) \| [publication](https://doi.org/10.1080/19466315.2022.2144944)
--   @rufibach_24: Overview paper, summarizing the above four papers and sketching a roadmap how to move forward with estimation of AE risks. [arxiv](https://arxiv.org/abs/2402.17692) \|
+-   @rufibach_24: Overview paper, summarizing the above four papers and sketching a roadmap how to move forward with estimation of AE risks. [arxiv](https://arxiv.org/abs/2402.17692) \| [publication (open access)](https://doi.org/10.1186/s13063-024-08186-7).
 
 # Podcasts
 
